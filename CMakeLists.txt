@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.0)
+project(find_birthday_in_pi)
+set(T find_birthday_in_pi)
+add_executable(${T} WIN32 main.c pi.c pi.h)
+target_link_libraries(${T} ComCtl32.lib)
